@@ -13,3 +13,5 @@ dimension(::Type{SVector{N, T}}) where {N,T} = Val{N}
 dimension(::Type{gt.FlexibleConvexHull{T}}) where {T} = dimension(T)
 
 dimension(::Type{gt.HyperRectangle{N, T}}) where {N,T} = Val{N}
+
+dimension(::Type{gt.HyperSphere{N, T}}) where {N,T} = Val{N}
